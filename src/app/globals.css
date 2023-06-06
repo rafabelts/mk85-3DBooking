@@ -8,20 +8,15 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #201A1B;
+  background: #EBEBEB;
+}
+
+.checkbox {
+  @apply mr-2;
+  @apply w-5 h-5;
+  /* @apply border-blue-700; */
+  @apply rounded;
 }
